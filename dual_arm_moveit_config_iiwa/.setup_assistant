@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: iiwa_description
+    relative_path: urdf/iiwa7/dual_arm_iiwa.xacro
+  srdf:
+    relative_path: config/iiwa_dual_arm.srdf
+  package_settings:
+    author_name: shri
+    author_email: shri@gmail.com
+    generated_timestamp: 1750081128

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<robot name="iiwa_dual_arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:include filename="$(find iiwa_description)/urdf/iiwa7/iiwa7_description.xacro"/>
+
+    <link name="world"/>
+
+    <xacro:iiwa7 robot_name="left" parent="world">
+        <origin xyz="0 -1.5 0" rpy="0 0 0"/>
+    </xacro:iiwa7>
+
+    <xacro:iiwa7 robot_name="right" parent="world">
+        <origin xyz="0 +1.5 0" rpy="0 0 0"/>
+    </xacro:iiwa7>
+
+</robot>
